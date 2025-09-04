@@ -1,0 +1,34 @@
+## Common Summation Formulae
+
+$$\sum_{i = 1}^{n} i = \frac{n(n+1)}{2} $$
+
+$$ \sum_{i = 1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6} $$
+
+$$\sum_{i = 1}^{n}i^3 = \frac{n^2(n+1)^2}{4} $$
+
+$$ \sum_{i = 1}^{n}r^i = \frac{1-r^{n+1}}{1-r}$$
+
+## Geometric Series
+
+$$S = \sum_{n=0}^{\infty}{ar^{n}} = a + ar + ar^2 + ar^3\dots
+$$
+
+Is convergent if $|r|< 1$ and,
+
+$$S = \frac{a}{1-r}$$
+
+## Power-Series
+
+The power series
+
+$$\zeta(p) = \sum_{n = 1}^{\infty} \frac{1}{n^p}$$
+
+converges for $p>1$
+
+## Common Power Series
+
+$$e^x = \sum_{n=0}^{\infty}{\frac{x^n}{n!}} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!}+\dots $$
+
+$$\sin x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n+1)!} x^{2n+1} =  x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots$$
+
+$$\cos x = \sum^{\infty}_{n=0} \frac{(-1)^n}{(2n)!} x^{2n} =  1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots $$

@@ -1,0 +1,50 @@
+graph TD
+
+subgraph SO[Second Order (linear)]
+
+SO_h{"Homogeneous?"}
+SO_lap_q{"Const coeff & init values?"}
+SO_lap["Use Laplace transform"]
+
+SO_std["Standard form:\n y'' + P(x) y' + Q(x) y = 0"]
+SO_given{"Given one solution y1?"}
+SO_red["Reduction of order"]
+
+SO_cc_q{"Constant coefficients?"}
+SO_aux["Characteristic (aux) equation"]
+
+SO_ce_q["Cauchy-Euler?\n x^2 y'' + a x y' + b y = 0"]
+SO_ce["Try y = x^m"]
+
+SO_series["Series methods"]
+SO_series_q{"P,Q defined at x = 0?"}
+SO_power["Power series"]
+SO_frob_q{"x*P and x^2*Q defined at x = 0?"}
+SO_frob["Frobenius"]
+
+SO_inh["Solve associated homogeneous"]
+SO_part["Then find a particular solution"]
+SO_guess["Undetermined coefficients"]
+SO_ann["Annihilator"]
+SO_vop["Variation of parameters"]
+SO_app["Applications:\n LRC circuits; Spring modeling"]
+
+SO_h -->|Yes| SO_std --> SO_given
+SO_given -- Yes --> SO_red
+SO_std --> SO_cc_q
+SO_cc_q -- Yes --> SO_aux
+SO_cc_q -- No --> SO_ce_q
+SO_ce_q -- Yes --> SO_ce
+SO_ce_q -- No --> SO_series --> SO_series_q
+SO_series_q -- Yes --> SO_power
+SO_series_q -- No --> SO_frob_q
+SO_frob_q -- Yes --> SO_frob
+
+SO_h -->|No| SO_inh --> SO_part
+SO_part --> SO_guess
+SO_part --> SO_ann
+SO_part --> SO_vop
+
+SO_h -.-> SO_lap_q --> SO_lap
+SO_app
+end

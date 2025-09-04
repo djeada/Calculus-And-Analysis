@@ -1,0 +1,36 @@
+graph TD
+
+%% FIRST-ORDER ODEs
+FO_lin{"Linear?"};
+FO_lap_q{"Const coeff & initial values?"};
+FO_lap["Use Laplace transform"];
+
+FO_std["Put in standard form:\ny' + P(x)*y = f(x)"];
+FO_if["Integrating factor:\nmu(x) = exp(int P(x) dx)"];
+FO_bern_q{"Bernoulli?\ny' + P*y = Q*y^n"};
+FO_bern["Bernoulli:\nlet v = y^(1-n)"];
+
+FO_sep_q{"Separable?"};
+FO_sep["Separate variables and integrate"];
+FO_form["Look for a form"];
+FO_exact["Exact form:\nM(x,y)dx + N(x,y)dy = 0"];
+FO_exact_q{"Exact?  M_y = N_x"};
+FO_exact_sol["Find F with F_x = M, F_y = N\n=> F(x,y) = C"];
+FO_hom_q{"Homogeneous exponents?"};
+FO_hom["Sub y = v*x (or x = u*y), integrate"];
+FO_if2["Try integrating factor mu(x) or mu(y)"];
+
+FO_app[["Applications:\nPopulation growth; Radioactive decay; Mixing"]];
+
+FO_lin -->|Yes| FO_std --> FO_if --> FO_bern_q;
+FO_bern_q -- Yes --> FO_bern;
+FO_bern_q -- No --> FO_if;
+FO_lin -->|No| FO_sep_q;
+FO_sep_q -- Yes --> FO_sep;
+FO_sep_q -- No --> FO_form --> FO_exact --> FO_exact_q;
+FO_exact_q -- Yes --> FO_exact_sol;
+FO_exact_q -- No --> FO_hom_q;
+FO_hom_q -- Yes --> FO_hom;
+FO_hom_q -- No --> FO_if2;
+FO_lin -.-> FO_lap_q --> FO_lap;
+FO_app;
