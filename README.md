@@ -44,5 +44,5 @@ A short list of dependable, freely available materials:
 * **“Introduction to Real Analysis Course Lectures” (YouTube playlist):** [https://youtube.com/playlist?list=PLmU0FIlJY-MngWPhBDUPelVV3GhDw\_mJu](https://youtube.com/playlist?list=PLmU0FIlJY-MngWPhBDUPelVV3GhDw_mJu)
 * **University of Lethbridge Calculus Texts (GitHub):** [https://github.com/ULeth-Math-CS/CalculusTexts](https://github.com/ULeth-Math-CS/CalculusTexts)
 * **UPenn Calculus materials (GitHub):** [https://github.com/shun-liang/upenn\_calculus](https://github.com/shun-liang/upenn_calculus)
-* CALCULUS MADE EASY: https://www.gutenberg.org/files/33283/33283-pdf.pdf
+* **"Calculus made easy":** [https://www.gutenberg.org/files/33283/33283-pdf.pdf](https://www.gutenberg.org/files/33283/33283-pdf.pdf)
 
